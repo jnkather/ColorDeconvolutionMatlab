@@ -2,7 +2,7 @@
 
 ## Background
 
-Color deconvolution was introduced by Ruifrok et al. in 2001 [1] and describes a method to extract stain intensities from RGB images of histological slides. Color deconvolution is widely used for image processing in histology and there are very efficient Fiji and Python implementation available (see below, [2]). This repository provides an efficient Matlab implementation of color deconvolution. 
+Color deconvolution was introduced by Ruifrok et al. in 2001 [1] and describes a method to extract stain intensities from RGB images of histological slides. Color deconvolution is widely used for image processing in histology and there are very efficient Fiji and Python implementation available (see below, [2]). This repository provides an efficient Matlab implementation of color deconvolution. The code is partly based on the python implementation in [scikit-image](https://github.com/scikit-image/scikit-image/blob/master/skimage/color/colorconv.py).
 
 ## Example
 
