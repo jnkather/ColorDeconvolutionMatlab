@@ -12,5 +12,5 @@ function imageOut = SeparateStains(imageRGB, Matrix)
     imageOut = reshape(imageOut, size(imageRGB));
 
     % post-processing
-    imageOut = normalizeImage(imageOut,'no-stretch');
+    imageOut = normalizeImage(imageOut,'stretch');
 end

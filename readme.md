@@ -7,19 +7,19 @@ Color deconvolution was introduced by Ruifrok et al. in 2001 [1] and describes a
 ## Example
 
 ### Original image
-![Original image](http://www.proteinatlas.org/images/20416/45828_A_4_7_rna_selected.jpg "Original image")
+![Original image thumbnail](Tumor_CD31_LoRes.png "Original image thumbnail")
 
-Image source: www.proteinatlas.org [3]
+High resolution image: 
 
 ### Fiji Output
 ![Fiji Output](FijiOutput.jpg "Fiji Output")
-Panels: Original - Stain vectors - Hematoxylin - DAB - residual
+Panels: Original - Hematoxylin - DAB - residual
 
 The source image is stained with Hematoxylin and DAB. The third channel represents the residual and should be empty. Here, this residual channel still contains a lot of information which is not desirable. For an optimal result, the standard values of the vectors have to be changed. Still, the DAB stain is extracted quite well.
 
 ### Output of my code
 
-![my Output](myOutput.jpg "My Output")
+![my Output](MyOutputFull.png "My Output")
 The output is similar to Fiji's output. The residual is not neglectable, but the DAB channel comes out quite well. Still, the stain vectors should be optimized.
 
 ## To do
