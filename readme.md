@@ -18,7 +18,7 @@ The source image is stained with Hematoxylin and DAB. The third channel represen
 ### Output of my code
 
 ![my Output](MyOutputFull.png "My Output")
-The output is similar to Fiji's output (only I enhance the contrast by stretching the histograms). The residual's histogram is also stretched and it can be appreciated that the residual is essentially random noise, so it does not contain a lot of information.
+The output is similar to Fiji's output (note that the contrast is enhanced by stretching the histograms). The residual's histogram is also stretched and it can be appreciated that the residual is essentially random noise, so it does not contain a lot of information.
 
 ## To do
 
