@@ -22,6 +22,11 @@ The source image is stained with Hematoxylin and DAB. The third channel represen
 ![my Output](myOutput.jpg "My Output")
 The output is similar to Fiji's output. The residual is not neglectable, but the DAB channel comes out quite well. Still, the stain vectors should be optimized.
 
+## To do
+
+* improve standard color deconvolution matrix for H DAB images
+* fix contrast scaling in inverse color deconvolution function (RecombineStains)
+
 ## More resources on color deconvolution
 
 * Fiji implementation explained on the [Fiji website](http://fiji.sc/Colour_Deconvolution)
