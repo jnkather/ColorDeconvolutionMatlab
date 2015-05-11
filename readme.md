@@ -13,7 +13,7 @@ Color deconvolution was introduced by Ruifrok et al. in 2001 [1] and describes a
 ![Fiji Output](FijiOutput.jpg "Fiji Output")
 Panels: Original - Hematoxylin - DAB - residual
 
-The source image is stained with Hematoxylin and DAB. The third channel represents the residual and should be empty. Here, the standard values fit pretty well and the residual is small. 
+The source image is stained with Hematoxylin and DAB. The third channel represents the residual and should be empty. Here, the standard values for the deconvolution matrix fit pretty well and the residual is small. 
 
 ### Output of my code
 
