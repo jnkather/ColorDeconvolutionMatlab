@@ -1,4 +1,4 @@
-% color deconvolution function by Jakob Nikolas Kather, 2015
+% color deconvolution project by Jakob Nikolas Kather, 2015
 % contact: www.kather.me
 
 % initialize
@@ -24,14 +24,13 @@ DAB = [0.27; 0.57; 0.78];
 HEDtoRGB = [He/norm(He) Eo/norm(Eo) DAB/norm(DAB)]';
 RGBtoHED = inv(HEDtoRGB);
     
-% call stain separation functions, stop time
+% separate stains = perform color deconvolution
 tic
-imageHED = SeparateStains(imageRGB,RGBtoHED);
+imageHED = SeparateStains(imageRGB, RGBtoHED);
 toc
 
-% show images
+% % show images
 fig1 = figure();
-hold on;
 subplot(2,4,1); imshow(imageRGB); title('Orig');
 subplot(2,4,2); imshow(imageHED(:,:,1),[]); title('He');
 subplot(2,4,3); imshow(imageHED(:,:,2),[]); title('Eo');
@@ -41,3 +40,12 @@ subplot(2,4,5); imhist(rgb2gray(imageRGB)); title('Orig');
 subplot(2,4,6); imhist(imageHED(:,:,1)); title('He');
 subplot(2,4,7); imhist(imageHED(:,:,2)); title('Eo');
 subplot(2,4,8); imhist(imageHED(:,:,3)); title('DAB');
+
+% combine stains = restore the original image
+% tic
+% imageRGB_restored = RecombineStains(imageHED, HEDtoRGB);
+% toc
+
+% fig2 = figure()
+% subplot(2,2,1); imshow(imageRGB); title('Orig');
+% subplot(2,2,2); imshow(imageRGB_restored); title('restored');
