@@ -25,8 +25,9 @@ The output is similar to Fiji's output. The residual is not neglectable, but the
 ## More resources on color deconvolution
 
 * Fiji implementation explained on the [Fiji website](http://fiji.sc/Colour_Deconvolution)
+* python scikit-image implementation on [GitHub](https://github.com/scikit-image/scikit-image/blob/master/skimage/color/colorconv.py)
 * in-depth explanation of the fiji implementation on [mecourse.com](http://www.mecourse.com/landinig/software/cdeconv/cdeconv.html)
-* another Matlab implementation by Antony Chan on [web.hku.hk](http://web.hku.hk/~ccsigma/color-deconv/color-deconv.html)
+* another Matlab implementation by Antony Chan on [web.hku.hk](http://web.hku.hk/~ccsigma/color-deconv/color-deconv.html) (slower because of two nested for loops)
 * yet another Matlab implementation: [imagenebula](https://code.google.com/p/imagenebula/source/browse/imagenebula/matlab/color/colordeconv.m?r=ec8fb69176f28ba49b38d5556452c38f7e02fa5a)
 
 ## References

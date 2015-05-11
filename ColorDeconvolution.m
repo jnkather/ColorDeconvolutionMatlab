@@ -10,10 +10,15 @@ format compact, close all, clear all, clc;
 imageURL = 'http://www.proteinatlas.org/images/20416/45828_A_4_7_rna_selected.jpg';
 imageRGB = imread(imageURL);
 
-% specify stain vectors
+% set of standard values for stain vectors (from python scikit)
 He = [0.65; 0.70; 0.29];
 Eo = [0.07; 0.99; 0.11];
 DAB = [0.27; 0.57; 0.78];
+
+% alternative set of standard values (HDAB from Fiji)
+% He = [ 0.6500286;  0.704031;    0.2860126 ];
+% DAB = [ 0.26814753;  0.57031375;  0.77642715];
+% Eo = [ 0.7110272;   0.42318153; 0.5615672 ]; % residual
 
 % combine stain vectors to deconvolution matrix
 HEDtoRGB = [He/norm(He) Eo/norm(Eo) DAB/norm(DAB)]';

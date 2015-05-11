@@ -21,6 +21,6 @@ function imageOut = SeparateStains(imageRGB, convMatrix)
         imageOut(:,:,i) = 1 - imageOut(:,:,i);
 
         % optional: stretch histogram
-        %imageOut(:,:,i) = imadjust(imageOut(:,:,i),stretchlim(imageOut(:,:,i)),[]);
+        % imageOut(:,:,i) = imadjust(imageOut(:,:,i),stretchlim(imageOut(:,:,i)),[]);
 	end
 end
