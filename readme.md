@@ -6,25 +6,22 @@ Color deconvolution was introduced by Ruifrok et al. in 2001 [1] and describes a
 
 ## Example
 
-### Original image
+### Original image preview
 ![Original image thumbnail](Tumor_CD31_LoRes.png "Original image thumbnail")
-
-High resolution image: 
 
 ### Fiji Output
 ![Fiji Output](FijiOutput.jpg "Fiji Output")
 Panels: Original - Hematoxylin - DAB - residual
 
-The source image is stained with Hematoxylin and DAB. The third channel represents the residual and should be empty. Here, this residual channel still contains a lot of information which is not desirable. For an optimal result, the standard values of the vectors have to be changed. Still, the DAB stain is extracted quite well.
+The source image is stained with Hematoxylin and DAB. The third channel represents the residual and should be empty. Here, the standard values fit pretty well and the residual is small. 
 
 ### Output of my code
 
 ![my Output](MyOutputFull.png "My Output")
-The output is similar to Fiji's output. The residual is not neglectable, but the DAB channel comes out quite well. Still, the stain vectors should be optimized.
+The output is similar to Fiji's output (only I enhance the contrast by stretching the histograms). The residual's histogram is also stretched and it can be appreciated that the residual is essentially random noise, so it does not contain a lot of information.
 
 ## To do
 
-* improve standard color deconvolution matrix for H DAB images
 * fix contrast scaling in inverse color deconvolution function (RecombineStains)
 
 ## More resources on color deconvolution
